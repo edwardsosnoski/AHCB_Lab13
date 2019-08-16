@@ -8,7 +8,7 @@ namespace AHCB_Lab13
             Name = "Rocky";
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo GenerateRoshambo()
         {
             Roshambo = Roshambo.rock;
             return Roshambo;

@@ -3,13 +3,15 @@ namespace AHCB_Lab13
 {
     public class YouTheUser : Player
     {
+        private const string Value = "Please enter your name:";
+
         public YouTheUser()
         {
-            Console.WriteLine("Please enter your name");
+            Console.WriteLine(Value);
             Name = Console.ReadLine();
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo GenerateRoshambo()
         {
             Roshambo userInput = new Roshambo();
             Validator validator = new Validator();
@@ -23,7 +25,6 @@ namespace AHCB_Lab13
                 if (validateInput)
                 {
                     userInput = result;
-                    Console.WriteLine("That choice was correct.");
                 }
                 else
                 {

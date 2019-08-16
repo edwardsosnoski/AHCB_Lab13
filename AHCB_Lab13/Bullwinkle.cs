@@ -8,12 +8,10 @@ namespace AHCB_Lab13
             Name = "Bullwinkle";
         }
 
-        public override Roshambo generateRoshambo()
+        public override Roshambo GenerateRoshambo()
         {
-            Random r = new Random();
-            int rInt = r.Next(1, 3);
-            Roshambo = (Roshambo)rInt;
-            return Roshambo;
+            int r = new Random().Next(1, 3);
+            return (Roshambo)r;
         }
     }
 }

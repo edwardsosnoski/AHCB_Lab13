@@ -6,6 +6,6 @@ namespace AHCB_Lab13
         public string Name { get; set; }
         public virtual Roshambo Roshambo { get; set; }
 
-        public abstract Roshambo generateRoshambo();
+        public abstract Roshambo GenerateRoshambo();
     }
 }
